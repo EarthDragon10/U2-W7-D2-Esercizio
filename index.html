@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U2-W7-D2 | 1 Esercizio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main id="main">
+        <div id="input-form">
+            <h1>Ufficio Anagrafe</h1>
+
+            <input class="input-name" type="text" placeholder="Inserisci il tuo nome" name="name" id="name" required>
+            <input class="input-name" type="text" placeholder="Inserisci il tuo cognome" name="surname" id="surname"
+                required>
+            <div id="input-date-time">
+                <label for="">Inserisci la tua etá:</label>
+                <input type="date" name="date-birthday" id="date-birthday" required>
+            </div>
+            <div id="box-btn">
+                <button id="btn-submit" onclick="createAndInsertElement()">Invia</button>
+                <button id="btn-reset" onclick="resetArchiveData()">Reset</button>
+            </div>
+
+        </div>
+
+        <div id="table"></div>
+        <div id="display-pagination">
+            <button class="btn-pagination" onclick="displayElementOfList(10)">1</button>
+            <button class="btn-pagination" onclick="displayElementOfList(20)">2</button>
+            <button class="btn-pagination" onclick="displayElementOfList(30)">3</button>
+        </div>
+        <div id="error-display">
+
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
